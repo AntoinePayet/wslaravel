@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{$message}}.</p>
+    <div>
+        <?php
+            if(DB::connection()->getPdo())
+            {
+                echo "Connexion réussie à la base de données => "
+                    DB::connection()->getPdo();
+            }
+        ?>
+    </div>
 </body>
 </html>
-
