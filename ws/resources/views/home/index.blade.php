@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{$message}}.</p>
+    <p>{{$user->firstname}}</p>
 </body>
 </html>
 
